@@ -84,17 +84,17 @@ export interface CareerContent {
 export const CAREER_TABS: CareerContent[] = [
   {
     id: "hockey-player",
-    title: "Hockey Player",
+    title: "Elite Hockey",
     icon: "hockey-puck"
   },
   {
     id: "coach",
-    title: "Hockey Coach",
+    title: "Skills Development",
     icon: "chalkboard-teacher"
   },
   {
     id: "ai-engineer",
-    title: "AI Consultant & Engineer",
+    title: "AI & Sports Tech",
     icon: "robot"
   }
 ];

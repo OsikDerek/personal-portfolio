@@ -27,19 +27,19 @@ export default function AboutSection() {
   return (
     <section id="about" ref={sectionRef} className="py-16 bg-white section-fade">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold font-montserrat text-primary mb-12 text-center">About Me</h2>
+        <h2 className="text-3xl md:text-4xl font-bold font-montserrat text-primary mb-12 text-center">Bridging Two Worlds</h2>
         
         <div className="flex flex-col md:flex-row items-start gap-8 md:gap-12">
           <div className="w-full md:w-1/3">
             {/* Hockey player in action photo */}
             <img 
-              src="https://pixabay.com/get/g6dcf5bff4b374210fe5c83e9ee316e993dc998a7edc4df40de472ef7d70e96c72602677f3ef8345d656022fcee44d4950f631719edc574d57ed4b57c39cd7943_1280.jpg" 
-              alt="John Doe playing professional hockey" 
+              src="https://images.unsplash.com/photo-1580679664046-d3a55c9d11e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500&q=80" 
+              alt="Professional hockey game in action" 
               className="rounded-xl shadow-lg w-full h-auto mb-6"
             />
             
             <div className="bg-neutral-100 p-6 rounded-xl">
-              <h3 className="text-xl font-bold font-montserrat text-primary mb-4">Quick Bio</h3>
+              <h3 className="text-xl font-bold font-montserrat text-primary mb-4">Professional Focus</h3>
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <svg className="text-secondary mt-1 mr-3 h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -50,17 +50,16 @@ export default function AboutSection() {
                 </li>
                 <li className="flex items-start">
                   <svg className="text-secondary mt-1 mr-3 h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-                    <path d="M6 12v5c0 2 1 3 3 3h6c2 0 3-1 3-3v-5"></path>
-                  </svg>
-                  <span>BS in Computer Science, MIT</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="text-secondary mt-1 mr-3 h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <circle cx="12" cy="12" r="10"></circle>
                     <polygon points="10 8 16 12 10 16 10 8"></polygon>
                   </svg>
-                  <span>10+ years as professional hockey player</span>
+                  <span>Elite Hockey Performance</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="text-secondary mt-1 mr-3 h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path>
+                  </svg>
+                  <span>Skills & Skating Development</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="text-secondary mt-1 mr-3 h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -68,13 +67,14 @@ export default function AboutSection() {
                     <line x1="8" x2="16" y1="21" y2="21"></line>
                     <line x1="12" x2="12" y1="17" y2="21"></line>
                   </svg>
-                  <span>5+ years in AI development</span>
+                  <span>Sports Analytics & AI Solutions</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="text-secondary mt-1 mr-3 h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path>
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c0 2 1 3 3 3h6c2 0 3-1 3-3v-5"></path>
                   </svg>
-                  <span>Certified hockey skills coach</span>
+                  <span>Computer Science Background</span>
                 </li>
               </ul>
             </div>
@@ -82,14 +82,14 @@ export default function AboutSection() {
           
           <div className="w-full md:w-2/3">
             <p className="text-lg text-neutral-700 mb-6">
-              I've always believed in pushing boundaries. As a professional hockey player, I learned the value of discipline, teamwork, and constant improvement. These same principles guide my work in AI development and coaching.
+              Pushing boundaries at the intersection of professional sports and technology. The disciplines of elite hockey and artificial intelligence may seem worlds apart, but they share fundamental principles: precision, strategic thinking, and continuous adaptation.
             </p>
             
             <p className="text-lg text-neutral-700 mb-6">
-              My unique background gives me a perspective few others have – combining athletic performance optimization with cutting-edge technology. Whether I'm developing AI solutions for sports analytics or coaching young players on the ice, I bring passion and expertise to everything I do.
+              This unique perspective enables the development of innovative solutions that enhance athletic performance through cutting-edge technology. From computer vision systems that analyze skating techniques to machine learning models that predict game outcomes, the goal is always to bridge these two worlds to create meaningful impact.
             </p>
             
-            <h3 className="text-2xl font-bold font-montserrat text-primary mt-8 mb-4">My Professional Journey</h3>
+            <h3 className="text-2xl font-bold font-montserrat text-primary mt-8 mb-4">Areas of Focus</h3>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-primary/5 p-6 rounded-xl">
@@ -99,9 +99,9 @@ export default function AboutSection() {
                     <polygon points="10 8 16 12 10 16 10 8"></polygon>
                   </svg>
                 </div>
-                <h4 className="text-xl font-bold font-montserrat text-primary mb-2">Hockey Career</h4>
+                <h4 className="text-xl font-bold font-montserrat text-primary mb-2">Elite Hockey</h4>
                 <p className="text-neutral-700">
-                  Played professionally for 10+ years in top leagues, represented national team, and developed specialized skating techniques.
+                  Professional-level performance focusing on skating mechanics, game strategy, and high-performance training methodologies.
                 </p>
               </div>
               
@@ -111,9 +111,9 @@ export default function AboutSection() {
                     <path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path>
                   </svg>
                 </div>
-                <h4 className="text-xl font-bold font-montserrat text-secondary mb-2">Coaching</h4>
+                <h4 className="text-xl font-bold font-montserrat text-secondary mb-2">Skills Development</h4>
                 <p className="text-neutral-700">
-                  Certified skating and skills coach helping players of all levels improve their technical abilities and game awareness.
+                  Systematic coaching approaches that combine technical expertise with data-driven feedback for players at all levels.
                 </p>
               </div>
               
@@ -126,14 +126,14 @@ export default function AboutSection() {
                     <path d="M9 17h3"></path>
                   </svg>
                 </div>
-                <h4 className="text-xl font-bold font-montserrat text-accent mb-2">AI Development</h4>
+                <h4 className="text-xl font-bold font-montserrat text-accent mb-2">Sports Technology</h4>
                 <p className="text-neutral-700">
-                  Specialized in machine learning solutions for sports analytics, computer vision, and performance optimization.
+                  Custom AI solutions for performance analytics, biomechanics analysis, and game strategy optimization.
                 </p>
               </div>
             </div>
             
-            <h3 className="text-2xl font-bold font-montserrat text-primary mt-8 mb-4">Skills & Expertise</h3>
+            <h3 className="text-2xl font-bold font-montserrat text-primary mt-8 mb-4">Technical Expertise</h3>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <div className="px-4 py-2 bg-neutral-100 rounded-lg text-center">

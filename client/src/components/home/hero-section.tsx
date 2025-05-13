@@ -38,8 +38,8 @@ export default function HeroSection() {
               </span>
             </h1>
             <p className="text-lg md:text-xl text-neutral-700 mb-8 max-w-lg">
-              Bridging the worlds of professional hockey and artificial intelligence. 
-              Passionate about performance, innovation, and helping others excel.
+              Where hockey meets technology. Creating innovative solutions at the intersection 
+              of professional sports and artificial intelligence.
             </p>
             <div className="flex flex-wrap gap-4">
               <a 
@@ -57,12 +57,37 @@ export default function HeroSection() {
             </div>
           </div>
           <div className="w-full md:w-1/2">
-            {/* Professional headshot */}
-            <img 
-              src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80" 
-              alt="John Doe - Professional Headshot" 
-              className="rounded-xl shadow-xl mx-auto"
-            />
+            {/* Image collage showing different professional contexts */}
+            <div className="grid grid-cols-2 gap-3">
+              <div className="relative aspect-square overflow-hidden rounded-tl-xl shadow-lg">
+                <img 
+                  src="https://images.unsplash.com/photo-1580679664046-d3a55c9d11e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80" 
+                  alt="Professional Hockey Action" 
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <div className="relative aspect-square overflow-hidden rounded-tr-xl shadow-lg">
+                <img 
+                  src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80" 
+                  alt="AI Development Work" 
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <div className="relative aspect-square overflow-hidden rounded-bl-xl shadow-lg">
+                <img 
+                  src="https://images.unsplash.com/photo-1531983412531-1f49a365ffed?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80" 
+                  alt="Hockey Coaching" 
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <div className="relative aspect-square overflow-hidden rounded-br-xl shadow-lg">
+                <img 
+                  src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80" 
+                  alt="Professional Portrait" 
+                  className="h-full w-full object-cover"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -59,7 +59,7 @@ export default function CareersSection() {
   return (
     <section id="careers" ref={sectionRef} className="py-16 bg-white section-fade">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold font-montserrat text-primary mb-12 text-center">Professional Careers</h2>
+        <h2 className="text-3xl md:text-4xl font-bold font-montserrat text-primary mb-12 text-center">Professional Disciplines</h2>
         
         <div className="mb-10">
           <div className="flex flex-wrap justify-center border-b">
