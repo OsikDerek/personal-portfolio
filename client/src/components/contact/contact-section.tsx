@@ -106,13 +106,13 @@ export default function ContactSection() {
   return (
     <section id="contact" ref={sectionRef} className="py-16 bg-neutral-100 section-fade">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold font-montserrat text-primary mb-12 text-center">Get In Touch</h2>
+        <h2 className="text-3xl md:text-4xl font-bold font-montserrat text-primary mb-12 text-center">Connect & Collaborate</h2>
         
         <div className="flex flex-col lg:flex-row gap-8">
           <div className="w-full lg:w-1/2">
-            <h3 className="text-2xl font-bold font-montserrat text-primary mb-6">Contact Information</h3>
+            <h3 className="text-2xl font-bold font-montserrat text-primary mb-6">Project Inquiries</h3>
             <p className="text-lg text-neutral-700 mb-8">
-              I'm always interested in new opportunities, collaborations, and innovative projects. Feel free to reach out for consulting services, speaking engagements, or just to connect.
+              Interested in exploring potential collaborations, innovative sports technology projects, or training programs? Reach out to discuss consulting services, speaking engagements, or partnership opportunities.
             </p>
             
             <div className="space-y-6">
@@ -222,7 +222,7 @@ export default function ContactSection() {
           
           <div className="w-full lg:w-1/2">
             <form onSubmit={handleSubmit} className="bg-white p-8 rounded-xl shadow-lg">
-              <h3 className="text-2xl font-bold font-montserrat text-primary mb-6">Send a Message</h3>
+              <h3 className="text-2xl font-bold font-montserrat text-primary mb-6">Start a Conversation</h3>
               
               <div className="mb-6">
                 <label htmlFor="name" className="block text-neutral-700 font-medium mb-2">Your Name</label>
