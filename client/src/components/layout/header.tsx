@@ -37,7 +37,8 @@ export default function Header() {
             <a href="#home" className="text-neutral-700 hover:text-primary font-medium transition duration-200">Home</a>
             <a href="#about" className="text-neutral-700 hover:text-primary font-medium transition duration-200">About</a>
             <a href="#projects" className="text-neutral-700 hover:text-primary font-medium transition duration-200">Projects</a>
-            <a href="#careers" className="text-neutral-700 hover:text-primary font-medium transition duration-200">Careers</a>
+            <a href="#careers" className="text-neutral-700 hover:text-primary font-medium transition duration-200">Disciplines</a>
+            <a href="#coaching" className="text-neutral-700 hover:text-primary font-medium transition duration-200">Coaching</a>
             <a href="#contact" className="text-neutral-700 hover:text-primary font-medium transition duration-200">Contact</a>
           </nav>
           
@@ -72,7 +73,8 @@ export default function Header() {
             <a href="#home" className="text-neutral-700 hover:text-primary font-medium transition duration-200 py-2">Home</a>
             <a href="#about" className="text-neutral-700 hover:text-primary font-medium transition duration-200 py-2">About</a>
             <a href="#projects" className="text-neutral-700 hover:text-primary font-medium transition duration-200 py-2">Projects</a>
-            <a href="#careers" className="text-neutral-700 hover:text-primary font-medium transition duration-200 py-2">Careers</a>
+            <a href="#careers" className="text-neutral-700 hover:text-primary font-medium transition duration-200 py-2">Disciplines</a>
+            <a href="#coaching" className="text-neutral-700 hover:text-primary font-medium transition duration-200 py-2">Coaching</a>
             <a href="#contact" className="text-neutral-700 hover:text-primary font-medium transition duration-200 py-2">Contact</a>
           </nav>
         </div>

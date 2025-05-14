@@ -39,6 +39,7 @@ export default function Home() {
         <AboutSection />
         <ProjectsSection />
         <CareersSection />
+        <CoachingSection />
         <ContactSection />
       </main>
       <Footer />
