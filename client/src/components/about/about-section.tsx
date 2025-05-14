@@ -81,6 +81,15 @@ export default function AboutSection() {
           </div>
           
           <div className="w-full md:w-2/3">
+            <div className="mb-8 p-5 bg-primary/5 rounded-xl">
+              <h3 className="text-xl font-bold font-montserrat text-primary mb-3">About Me</h3>
+              <p className="text-neutral-700">
+                Based in Toronto with 10+ years as a professional hockey player and 5+ years in AI development. 
+                Computer Science graduate from MIT who combines elite athletic experience with technical expertise.
+                Outside of work, I enjoy hiking, playing guitar, and volunteering with youth hockey programs.
+              </p>
+            </div>
+            
             <p className="text-lg text-neutral-700 mb-6">
               Pushing boundaries at the intersection of professional sports and technology. The disciplines of elite hockey and artificial intelligence may seem worlds apart, but they share fundamental principles: precision, strategic thinking, and continuous adaptation.
             </p>

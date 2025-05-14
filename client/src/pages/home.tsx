@@ -5,6 +5,7 @@ import HeroSection from "@/components/home/hero-section";
 import AboutSection from "@/components/about/about-section";
 import ProjectsSection from "@/components/projects/projects-section";
 import CareersSection from "@/components/careers/careers-section";
+import CoachingSection from "@/components/coaching/coaching-section";
 import ContactSection from "@/components/contact/contact-section";
 
 export default function Home() {

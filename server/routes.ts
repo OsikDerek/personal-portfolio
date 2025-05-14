@@ -11,7 +11,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   };
 
   // Contact form handling
-  app.post('/api/contact', (req, res) => {
+  app.post('/api/contact', (req: Request, res: Response) => {
     const { name, email, subject, message } = req.body;
     
     // Validate inputs
@@ -29,14 +29,14 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   // ===== COACHING PROGRAMS API =====
   // Get all active coaching programs
-  app.get('/api/programs', asyncHandler(async (req, res) => {
+  app.get('/api/programs', asyncHandler(async (req: Request, res: Response) => {
     const activeOnly = req.query.activeOnly !== 'false';
     const programs = await storage.getAllCoachingPrograms(activeOnly);
     return res.status(200).json({ programs });
   }));
 
   // Get a specific program
-  app.get('/api/programs/:id', asyncHandler(async (req, res) => {
+  app.get('/api/programs/:id', asyncHandler(async (req: Request, res: Response) => {
     const programId = parseInt(req.params.id);
     if (isNaN(programId)) {
       return res.status(400).json({ message: 'Invalid program ID' });
@@ -51,7 +51,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   }));
 
   // Create a new coaching program
-  app.post('/api/programs', asyncHandler(async (req, res) => {
+  app.post('/api/programs', asyncHandler(async (req: Request, res: Response) => {
     try {
       const programData = insertCoachingProgramSchema.parse(req.body);
       const newProgram = await storage.createCoachingProgram(programData);
@@ -71,7 +71,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   }));
 
   // Update a coaching program
-  app.patch('/api/programs/:id', asyncHandler(async (req, res) => {
+  app.patch('/api/programs/:id', asyncHandler(async (req: Request, res: Response) => {
     const programId = parseInt(req.params.id);
     if (isNaN(programId)) {
       return res.status(400).json({ message: 'Invalid program ID' });
@@ -103,7 +103,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   // ===== CLIENT PROFILES API =====
   // Get a client profile
-  app.get('/api/clients/:id', asyncHandler(async (req, res) => {
+  app.get('/api/clients/:id', asyncHandler(async (req: Request, res: Response) => {
     const clientId = parseInt(req.params.id);
     if (isNaN(clientId)) {
       return res.status(400).json({ message: 'Invalid client ID' });
@@ -118,7 +118,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   }));
 
   // Create a client profile
-  app.post('/api/clients', asyncHandler(async (req, res) => {
+  app.post('/api/clients', asyncHandler(async (req: Request, res: Response) => {
     try {
       const clientData = insertClientProfileSchema.parse(req.body);
       const newClient = await storage.createClientProfile(clientData);
@@ -138,7 +138,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   }));
 
   // Update a client profile
-  app.patch('/api/clients/:id', asyncHandler(async (req, res) => {
+  app.patch('/api/clients/:id', asyncHandler(async (req: Request, res: Response) => {
     const clientId = parseInt(req.params.id);
     if (isNaN(clientId)) {
       return res.status(400).json({ message: 'Invalid client ID' });
@@ -170,7 +170,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   // ===== COACHING SESSIONS API =====
   // Get client's sessions
-  app.get('/api/clients/:clientId/sessions', asyncHandler(async (req, res) => {
+  app.get('/api/clients/:clientId/sessions', asyncHandler(async (req: Request, res: Response) => {
     const clientId = parseInt(req.params.clientId);
     if (isNaN(clientId)) {
       return res.status(400).json({ message: 'Invalid client ID' });
@@ -186,7 +186,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   }));
 
   // Book a coaching session
-  app.post('/api/sessions', asyncHandler(async (req, res) => {
+  app.post('/api/sessions', asyncHandler(async (req: Request, res: Response) => {
     try {
       const sessionData = insertCoachingSessionSchema.parse(req.body);
       
@@ -219,7 +219,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   }));
 
   // Update a session (reschedule, cancel, etc.)
-  app.patch('/api/sessions/:id', asyncHandler(async (req, res) => {
+  app.patch('/api/sessions/:id', asyncHandler(async (req: Request, res: Response) => {
     const sessionId = parseInt(req.params.id);
     if (isNaN(sessionId)) {
       return res.status(400).json({ message: 'Invalid session ID' });
