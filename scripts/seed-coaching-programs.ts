@@ -75,14 +75,15 @@ async function seedCoachingPrograms() {
   }
 }
 
-// Execute immediately if run directly
-if (require.main === module) {
-  seedCoachingPrograms()
-    .then(() => process.exit(0))
-    .catch(error => {
-      console.error('Seed error:', error);
-      process.exit(1);
-    });
-}
+// Execute immediately
+seedCoachingPrograms()
+  .then(() => {
+    console.log('Seeding completed successfully');
+    process.exit(0);
+  })
+  .catch(error => {
+    console.error('Seed error:', error);
+    process.exit(1);
+  });
 
 export { seedCoachingPrograms };
