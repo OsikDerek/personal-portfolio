@@ -28,8 +28,8 @@ export default function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <a href="#home" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold font-montserrat text-primary">JD</span>
-            <span className="hidden sm:inline-block text-lg font-semibold font-montserrat text-neutral-700">John Doe</span>
+            <span className="text-2xl font-bold font-montserrat text-primary">DO</span>
+            <span className="hidden sm:inline-block text-lg font-semibold font-montserrat text-neutral-700">Derek Osik</span>
           </a>
           
           {/* Desktop Navigation */}

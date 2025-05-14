@@ -1,9 +1,9 @@
 // Social media links
 export const SOCIAL_LINKS = {
-  linkedin: "https://linkedin.com/in/johndoe",
-  twitter: "https://twitter.com/johndoe",
-  github: "https://github.com/johndoe",
-  instagram: "https://instagram.com/johndoe"
+  linkedin: "https://linkedin.com/in/YOUR_LINKEDIN_USERNAME",
+  twitter: "https://twitter.com/YOUR_TWITTER_USERNAME",
+  github: "https://github.com/YOUR_GITHUB_USERNAME",
+  instagram: "https://instagram.com/YOUR_INSTAGRAM_USERNAME"
 };
 
 // Projects data
