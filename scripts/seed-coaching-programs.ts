@@ -1,48 +1,52 @@
 import { db } from '../server/db';
-import { coachingPrograms } from '../shared/schema';
+import { coachingPrograms, coachingProgramTypeEnum } from '../shared/schema';
 import { log } from '../server/vite';
+import { sql } from 'drizzle-orm';
+
+// Define program types based on the enum
+type ProgramType = typeof coachingProgramTypeEnum.enumValues[number];
 
 // Sample coaching programs data
 const samplePrograms = [
   {
     name: 'Elite Skating Development',
     description: 'Intensive one-on-one skating training focusing on edge work, power, and technical refinement for competitive hockey players.',
-    type: 'one_on_one',
+    type: 'one_on_one' as ProgramType,
     duration: 60, // minutes
     price: 12500, // $125.00
-    isActive: true
+    active: true
   },
   {
     name: 'Small Group Skills Session',
     description: 'Develop puck handling, shooting, and game situation skills in a 3-5 player group environment with personalized attention.',
-    type: 'group',
+    type: 'group' as ProgramType,
     duration: 90, // minutes
     price: 8500, // $85.00
-    isActive: true
+    active: true
   },
   {
     name: 'Youth Hockey Camp',
     description: 'Week-long day camp for youth players covering all aspects of hockey development - skating, skills, game awareness, and off-ice training.',
-    type: 'camp',
+    type: 'camp' as ProgramType,
     duration: 300, // 5 hours
     price: 19900, // $199.00
-    isActive: true
+    active: true
   },
   {
     name: 'Video Analysis & Strategy Session',
     description: 'Online video review of your game footage with detailed feedback and personalized improvement strategies.',
-    type: 'online',
+    type: 'online' as ProgramType,
     duration: 45, // minutes
     price: 7500, // $75.00
-    isActive: true
+    active: true
   },
   {
     name: 'Hockey IQ Workshop',
     description: 'Learn to see the game at a higher level with drills and exercises designed to improve decision-making and game awareness.',
-    type: 'workshop',
+    type: 'workshop' as ProgramType,
     duration: 120, // 2 hours
     price: 9900, // $99.00
-    isActive: true
+    active: true
   }
 ];
 
@@ -51,7 +55,7 @@ async function seedCoachingPrograms() {
   
   try {
     // Check if programs already exist
-    const existingPrograms = await db.select({ count: { count: 'id' } })
+    const existingPrograms = await db.select({ count: sql<number>`count(${coachingPrograms.id})` })
       .from(coachingPrograms);
     
     if (existingPrograms[0].count > 0) {

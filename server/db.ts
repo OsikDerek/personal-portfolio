@@ -1,9 +1,10 @@
 import { Pool, neonConfig } from '@neondatabase/serverless';
 import { drizzle } from 'drizzle-orm/neon-serverless';
-import * as ws from 'ws';
+import ws from 'ws';
 import * as schema from "@shared/schema";
 
-neonConfig.webSocketConstructor = ws;
+// Configure Neon to use the ws package for WebSocket connections
+neonConfig.webSocketConstructor = ws as any;
 
 if (!process.env.DATABASE_URL) {
   throw new Error(
