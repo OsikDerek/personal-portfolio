@@ -98,7 +98,7 @@ export default function CareersSection() {
       ref={sectionRef}
       className="py-16 bg-white section-fade"
     >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl md:text-4xl font-bold font-montserrat text-primary mb-12 text-center">
           Professional Disciplines
         </h2>
@@ -109,7 +109,7 @@ export default function CareersSection() {
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`career-tab-btn px-6 py-3 font-medium flex items-center ${
+                className={`career-tab-btn px-8 py-4 font-medium flex items-center whitespace-nowrap text-base ${
                   activeTab === tab.id
                     ? "text-primary border-b-2 border-primary"
                     : "text-neutral-500 hover:text-primary"
