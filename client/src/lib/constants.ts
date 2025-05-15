@@ -20,6 +20,28 @@ export interface Project {
 export const PROJECTS: Project[] = [
   {
     id: 1,
+    title: "Stock Market Neural Network",
+    description:
+      "Implemented a neural network agent that predicts the direction of Tesla stock price movements using artificial neural networks and technical indicators.",
+    image:
+      "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
+    category: "ai",
+    tags: ["Neural Networks", "Machine Learning", "Stock Market", "Financial Analysis"],
+    githubLink: "https://github.com/derekosik/stock-nn-prediction",
+  },
+  {
+    id: 2,
+    title: "Portfolio Optimization with Riskfolio",
+    description:
+      "Financial analysis project using Python's Riskfolio library to optimize investment portfolios through various risk measurement models and customizable constraints.",
+    image:
+      "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
+    category: "ai",
+    tags: ["Finance", "Data Analysis", "Portfolio Optimization", "Python"],
+    githubLink: "https://github.com/derekosik/portfolio-optimization",
+  },
+  {
+    id: 3,
     title: "Facemask Recognition System",
     description:
       "Computer vision system that detects whether individuals are wearing face masks properly. Created during COVID-19 to help enforce mask policies in public spaces.",
@@ -30,7 +52,7 @@ export const PROJECTS: Project[] = [
     githubLink: "https://github.com/derekosik/facemask-recognition",
   },
   {
-    id: 2,
+    id: 4,
     title: "Dehydration Detection",
     description:
       "Wearable technology research project for monitoring and detecting dehydration in athletes, elder adults, and military personnel using machine learning algorithms.",
