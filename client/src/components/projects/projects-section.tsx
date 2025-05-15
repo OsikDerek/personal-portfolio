@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { PROJECTS } from "@/lib/constants";
 
-type ProjectCategory = 'all' | 'ai' | 'hockey' | 'web' | 'ai-finance' | 'c-programming' | 'hockey-ai' | 'algorithms';
+type ProjectCategory = 'all' | 'ai' | 'hockey' | 'web' | 'ai-finance' | 'c-programming' | 'hockey-ai' | 'algorithms' | 'research' | 'ai-research' | 'systems';
 
 export default function ProjectsSection() {
   const [activeCategory, setActiveCategory] = useState<ProjectCategory>('all');
@@ -108,6 +108,36 @@ export default function ProjectsSection() {
               }`}
             >
               Algorithms
+            </button>
+            <button 
+              onClick={() => setActiveCategory('research')}
+              className={`px-5 py-2 rounded-full font-medium transition ${
+                activeCategory === 'research' 
+                  ? 'bg-primary text-white' 
+                  : 'bg-white text-primary border border-primary hover:bg-primary/10'
+              }`}
+            >
+              Research
+            </button>
+            <button 
+              onClick={() => setActiveCategory('ai-research')}
+              className={`px-5 py-2 rounded-full font-medium transition ${
+                activeCategory === 'ai-research' 
+                  ? 'bg-primary text-white' 
+                  : 'bg-white text-primary border border-primary hover:bg-primary/10'
+              }`}
+            >
+              AI Research
+            </button>
+            <button 
+              onClick={() => setActiveCategory('systems')}
+              className={`px-5 py-2 rounded-full font-medium transition ${
+                activeCategory === 'systems' 
+                  ? 'bg-primary text-white' 
+                  : 'bg-white text-primary border border-primary hover:bg-primary/10'
+              }`}
+            >
+              Systems
             </button>
             <button 
               onClick={() => setActiveCategory('web')}
