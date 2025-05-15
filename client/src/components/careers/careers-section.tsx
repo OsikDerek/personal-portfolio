@@ -300,7 +300,7 @@ export default function CareersSection() {
                 <h4 className="text-xl font-bold font-montserrat text-primary mb-4">
                   Playing Style & Expertise
                 </h4>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 gap-y-5">
                   {HOCKEY_SKILLS.map((skill, index) => (
                     <ProgressSkill
                       key={index}
@@ -634,7 +634,7 @@ export default function CareersSection() {
                 <h3 className="text-xl font-bold font-montserrat text-accent mb-4">
                   AI Specializations
                 </h3>
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                   <div className="bg-white p-3 rounded-lg flex items-center">
                     <svg
                       className="text-accent mr-2 h-5 w-5"
@@ -771,7 +771,7 @@ export default function CareersSection() {
                 <h4 className="text-xl font-bold font-montserrat text-accent mb-4">
                   Technical Skills
                 </h4>
-                <div className="grid grid-cols-2 gap-y-4 gap-x-8 mb-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 gap-y-5 mb-8">
                   {AI_SKILLS.map((skill, index) => (
                     <ProgressSkill
                       key={index}
