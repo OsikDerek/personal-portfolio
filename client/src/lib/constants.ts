@@ -20,25 +20,25 @@ export interface Project {
 export const PROJECTS: Project[] = [
   {
     id: 1,
-    title: "Hockey Vision AI",
+    title: "Facemask Recognition System",
     description:
-      "Computer vision system that tracks player movements and provides real-time performance analytics during games and practice.",
+      "Computer vision system that detects whether individuals are wearing face masks properly. Created during COVID-19 to help enforce mask policies in public spaces.",
     image:
-      "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
+      "https://images.unsplash.com/photo-1584634731339-252a58327aee?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
     category: "ai",
-    tags: ["Python", "TensorFlow", "OpenCV"],
-    githubLink: "https://github.com/derekosik/hockey-vision-ai",
+    tags: ["Machine Learning", "Computer Vision", "COVID-19", "Public Health"],
+    githubLink: "https://github.com/derekosik/facemask-recognition",
   },
   {
     id: 2,
-    title: "Hockey Training Platform",
+    title: "Dehydration Detection",
     description:
-      "Comprehensive platform that combines skating technique analysis with personalized training programs, video demonstrations, and progress tracking.",
+      "Wearable technology research project for monitoring and detecting dehydration in athletes, elder adults, and military personnel using machine learning algorithms.",
     image:
-      "https://images.unsplash.com/photo-1528659882437-b89a74bc157f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
-    category: "hockey",
-    tags: ["React Native", "Firebase", "ML Kit", "Express", "PostgreSQL"],
-    githubLink: "https://github.com/derekosik/hockey-training-platform",
+      "https://images.unsplash.com/photo-1553484771-371a605b060b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
+    category: "ai",
+    tags: ["Machine Learning", "Wearable Tech", "Market Research", "Healthcare"],
+    githubLink: "https://github.com/derekosik/dehydration-detection",
   },
   {
     id: 3,
@@ -53,7 +53,40 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 4,
-    title: "Hockey Strategy AI",
+    title: "Card Game War (C)",
+    description:
+      "Implementation of the classic card game 'War' in C. Players draw cards from their deck, compare ranks and suits, with the winner taking both cards. Includes memory management and randomized gameplay.",
+    image:
+      "https://images.unsplash.com/photo-1606167668584-78701c57f13d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
+    category: "hockey",
+    tags: ["C", "Game Development", "Data Structures", "Algorithms"],
+    githubLink: "https://github.com/derekosik/card-game-war",
+  },
+  {
+    id: 5,
+    title: "Hockey Vision AI (In Progress)",
+    description:
+      "Computer vision system that tracks player movements and provides real-time performance analytics during games and practice.",
+    image:
+      "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
+    category: "ai",
+    tags: ["Python", "TensorFlow", "OpenCV"],
+    githubLink: "https://github.com/derekosik/hockey-vision-ai",
+  },
+  {
+    id: 6,
+    title: "Hockey Training Platform (In Progress)",
+    description:
+      "Comprehensive platform that combines skating technique analysis with personalized training programs, video demonstrations, and progress tracking.",
+    image:
+      "https://images.unsplash.com/photo-1528659882437-b89a74bc157f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
+    category: "hockey",
+    tags: ["React Native", "Firebase", "ML Kit", "Express", "PostgreSQL"],
+    githubLink: "https://github.com/derekosik/hockey-training-platform",
+  },
+  {
+    id: 7,
+    title: "Hockey Strategy AI (In Progress)",
     description:
       "AI system that analyzes game footage to identify patterns, predict opponent strategies, and recommend tactical adjustments.",
     image:
@@ -61,17 +94,6 @@ export const PROJECTS: Project[] = [
     category: "ai",
     tags: ["Python", "PyTorch", "SQL"],
     githubLink: "https://github.com/derekosik/game-strategy-ai",
-  },
-  {
-    id: 5,
-    title: "Dehydration Detection",
-    description:
-      "Wearable technology research project for monitoring and detecting dehydration in athletes, elder adults, and military personnel using machine learning algorithms.",
-    image:
-      "https://images.unsplash.com/photo-1553484771-371a605b060b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
-    category: "ai",
-    tags: ["Machine Learning", "Wearable Tech", "Market Research", "Healthcare"],
-    githubLink: "https://github.com/derekosik/dehydration-detection",
   },
 ];
 
