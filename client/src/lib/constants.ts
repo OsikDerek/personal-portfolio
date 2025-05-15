@@ -46,7 +46,7 @@ export const PROJECTS: Project[] = [
     description:
       "Computer vision system that detects whether individuals are wearing face masks properly. Created during COVID-19 to help enforce mask policies in public spaces.",
     image:
-      "https://images.unsplash.com/photo-1584634731339-252a58327aee?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
+      "https://images.unsplash.com/photo-1602893119308-906c21f25b5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
     category: "ai",
     tags: ["Machine Learning", "Computer Vision", "COVID-19", "Public Health"],
     githubLink: "https://github.com/derekosik/facemask-recognition",
@@ -85,6 +85,17 @@ export const PROJECTS: Project[] = [
     githubLink: "https://github.com/derekosik/card-game-war",
   },
   {
+    id: 10,
+    title: "Maze Search Algorithms",
+    description:
+      "Implementation of various search algorithms (BFS, DFS, A*, Dijkstra's) to solve maze navigation problems with different heuristics and performance comparisons.",
+    image:
+      "https://images.unsplash.com/photo-1519419166318-4f5c601b8e6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
+    category: "algorithms",
+    tags: ["Python", "Search Algorithms", "Pathfinding", "Heuristics"],
+    githubLink: "https://github.com/derekosik/maze-search-algorithms",
+  },
+  {
     id: 7,
     title: "Hockey Vision AI (In Progress)",
     description:
@@ -117,17 +128,7 @@ export const PROJECTS: Project[] = [
     tags: ["Python", "PyTorch", "SQL"],
     githubLink: "https://github.com/derekosik/game-strategy-ai",
   },
-  {
-    id: 10,
-    title: "Maze Search Algorithms",
-    description:
-      "Implementation of various search algorithms (BFS, DFS, A*, Dijkstra's) to solve maze navigation problems with different heuristics and performance comparisons.",
-    image:
-      "https://images.unsplash.com/photo-1519419166318-4f5c601b8e6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
-    category: "algorithms",
-    tags: ["Python", "Search Algorithms", "Pathfinding", "Heuristics"],
-    githubLink: "https://github.com/derekosik/maze-search-algorithms",
-  },
+
 ];
 
 // Career tabs content
