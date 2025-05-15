@@ -63,7 +63,7 @@ export const PROJECTS: Project[] = [
     githubLink: "https://github.com/derekosik/dehydration-detection",
   },
   {
-    id: 3,
+    id: 5,
     title: "Knight Isolation Game",
     description:
       "Implementation of a chess-inspired game where players move knights on a board trying to isolate their opponent. Features AI opponents with different difficulty levels.",
@@ -74,7 +74,7 @@ export const PROJECTS: Project[] = [
     githubLink: "https://github.com/derekosik/knight-isolation",
   },
   {
-    id: 4,
+    id: 6,
     title: "Card Game War (C)",
     description:
       "Implementation of the classic card game 'War' in C. Players draw cards from their deck, compare ranks and suits, with the winner taking both cards. Includes memory management and randomized gameplay.",
@@ -85,7 +85,7 @@ export const PROJECTS: Project[] = [
     githubLink: "https://github.com/derekosik/card-game-war",
   },
   {
-    id: 5,
+    id: 7,
     title: "Hockey Vision AI (In Progress)",
     description:
       "Computer vision system that tracks player movements and provides real-time performance analytics during games and practice.",
@@ -96,7 +96,7 @@ export const PROJECTS: Project[] = [
     githubLink: "https://github.com/derekosik/hockey-vision-ai",
   },
   {
-    id: 6,
+    id: 8,
     title: "Hockey Training Platform (In Progress)",
     description:
       "Comprehensive platform that combines skating technique analysis with personalized training programs, video demonstrations, and progress tracking.",
@@ -107,7 +107,7 @@ export const PROJECTS: Project[] = [
     githubLink: "https://github.com/derekosik/hockey-training-platform",
   },
   {
-    id: 7,
+    id: 9,
     title: "Hockey Strategy AI (In Progress)",
     description:
       "AI system that analyzes game footage to identify patterns, predict opponent strategies, and recommend tactical adjustments.",
