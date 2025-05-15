@@ -27,29 +27,29 @@ export const PROJECTS: Project[] = [
       "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
     category: "ai",
     tags: ["Python", "TensorFlow", "OpenCV"],
-    githubLink: "https://github.com/johndoe/hockey-vision-ai",
+    githubLink: "https://github.com/derekosik/hockey-vision-ai",
   },
   {
     id: 2,
-    title: "Skating Coach App",
+    title: "Hockey Training Platform",
     description:
-      "Mobile application for hockey coaches to analyze skating technique, track progress, and create personalized drills for players.",
+      "Comprehensive platform that combines skating technique analysis with personalized training programs, video demonstrations, and progress tracking.",
     image:
       "https://images.unsplash.com/photo-1528659882437-b89a74bc157f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
     category: "hockey",
-    tags: ["React Native", "Firebase", "ML Kit"],
-    githubLink: "https://github.com/johndoe/skating-coach",
+    tags: ["React Native", "Firebase", "ML Kit", "Express", "PostgreSQL"],
+    githubLink: "https://github.com/derekosik/hockey-training-platform",
   },
   {
     id: 3,
-    title: "Team Manager Dashboard",
+    title: "Knight Isolation Game",
     description:
-      "Web application for hockey team managers to handle scheduling, player stats, and team communications in one platform.",
+      "Implementation of a chess-inspired game where players move knights on a board trying to isolate their opponent. Features AI opponents with different difficulty levels.",
     image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
-    category: "web",
-    tags: ["Vue.js", "Node.js", "MongoDB"],
-    githubLink: "https://github.com/johndoe/team-manager",
+      "https://images.unsplash.com/photo-1560264280-88b68371db39?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
+    category: "ai",
+    tags: ["C", "Game Theory", "Minimax", "Alpha-Beta Pruning"],
+    githubLink: "https://github.com/derekosik/knight-isolation",
   },
   {
     id: 4,
@@ -60,29 +60,18 @@ export const PROJECTS: Project[] = [
       "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
     category: "ai",
     tags: ["Python", "PyTorch", "SQL"],
-    githubLink: "https://github.com/johndoe/game-strategy-ai",
+    githubLink: "https://github.com/derekosik/game-strategy-ai",
   },
   {
     id: 5,
-    title: "Training Program Builder",
+    title: "Dehydration Detection",
     description:
-      "Online platform for creating personalized hockey training programs with video demonstrations and progress tracking.",
-    image:
-      "https://images.unsplash.com/photo-1560264280-88b68371db39?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
-    category: "web",
-    tags: ["React", "Express", "PostgreSQL"],
-    githubLink: "https://github.com/johndoe/training-program-builder",
-  },
-  {
-    id: 6,
-    title: "Commentary Insights",
-    description:
-      "NLP system that analyzes broadcast commentary to extract valuable insights about player performance and game trends.",
+      "Wearable technology research project for monitoring and detecting dehydration in athletes, elder adults, and military personnel using machine learning algorithms.",
     image:
       "https://images.unsplash.com/photo-1553484771-371a605b060b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
     category: "ai",
-    tags: ["BERT", "FastAPI", "Redis"],
-    githubLink: "https://github.com/johndoe/commentary-insights",
+    tags: ["Machine Learning", "Wearable Tech", "Market Research", "Healthcare"],
+    githubLink: "https://github.com/derekosik/dehydration-detection",
   },
 ];
 
