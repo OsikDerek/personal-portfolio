@@ -186,6 +186,12 @@ export default function ProjectsSection() {
                         ? 'bg-purple-100 text-purple-600'
                       : project.category === 'algorithms'
                         ? 'bg-yellow-100 text-amber-600'
+                      : project.category === 'research'
+                        ? 'bg-green-100 text-green-600'
+                      : project.category === 'ai-research'
+                        ? 'bg-teal-100 text-teal-600'
+                      : project.category === 'systems'
+                        ? 'bg-blue-100 text-blue-600'
                         : 'bg-neutral-700/10 text-neutral-700'
                   }`}>
                     {project.category === 'ai' && 'AI'}
@@ -195,6 +201,9 @@ export default function ProjectsSection() {
                     {project.category === 'c-programming' && 'C PROGRAMMING'}
                     {project.category === 'algorithms' && 'ALGORITHMS'}
                     {project.category === 'web' && 'WEB'}
+                    {project.category === 'research' && 'RESEARCH'}
+                    {project.category === 'ai-research' && 'AI/RESEARCH'}
+                    {project.category === 'systems' && 'SYSTEMS'}
                   </span>
                 </div>
                 <p className="text-neutral-700 mb-4">
