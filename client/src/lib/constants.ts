@@ -185,10 +185,10 @@ export interface Skill {
 }
 
 export const HOCKEY_SKILLS: Skill[] = [
+  { name: "Athleticism", percentage: 98 },
   { name: "Skating", percentage: 95 },
   { name: "Passing", percentage: 90 },
   { name: "Shooting", percentage: 85},
-  { name: "Strategy", percentage: 85 },
   { name: "Defense", percentage: 81 },
   { name: "Physicality", percentage: 70 },
 ];
