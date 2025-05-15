@@ -117,6 +117,17 @@ export const PROJECTS: Project[] = [
     tags: ["Python", "PyTorch", "SQL"],
     githubLink: "https://github.com/derekosik/game-strategy-ai",
   },
+  {
+    id: 10,
+    title: "Maze Search Algorithms",
+    description:
+      "Implementation of various search algorithms (BFS, DFS, A*, Dijkstra's) to solve maze navigation problems with different heuristics and performance comparisons.",
+    image:
+      "https://images.unsplash.com/photo-1519419166318-4f5c601b8e6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
+    category: "algorithms",
+    tags: ["Python", "Search Algorithms", "Pathfinding", "Heuristics"],
+    githubLink: "https://github.com/derekosik/maze-search-algorithms",
+  },
 ];
 
 // Career tabs content
