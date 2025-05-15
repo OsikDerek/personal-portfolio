@@ -20,6 +20,17 @@ export interface Project {
 export const PROJECTS: Project[] = [
   {
     id: 1,
+    title: "Discipline & Mental Health Research",
+    description:
+      "Cognitive science research exploring how structured discipline shapes self-representation and emotional resilience in children and adolescents. Examines mechanisms that link early discipline with long-term mental health outcomes.",
+    image:
+      "https://images.unsplash.com/photo-1607988795691-3d0147b43231?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
+    category: "ai",
+    tags: ["Cognitive Science", "Mental Health", "Neural Networks", "Child Development", "Georgia Tech"],
+    githubLink: "https://github.com/derekosik/discipline-mental-health-research",
+  },
+  {
+    id: 2,
     title: "Stock Market Neural Network",
     description:
       "Implemented a neural network agent that predicts the direction of Tesla stock price movements using artificial neural networks and technical indicators.",
@@ -30,7 +41,7 @@ export const PROJECTS: Project[] = [
     githubLink: "https://github.com/derekosik/stock-nn-prediction",
   },
   {
-    id: 2,
+    id: 3,
     title: "Portfolio Optimization with Riskfolio",
     description:
       "Financial analysis project using Python's Riskfolio library to optimize investment portfolios through various risk measurement models and customizable constraints.",
@@ -41,7 +52,7 @@ export const PROJECTS: Project[] = [
     githubLink: "https://github.com/derekosik/portfolio-optimization",
   },
   {
-    id: 3,
+    id: 11,
     title: "Facemask Recognition System",
     description:
       "Computer vision system that detects whether individuals are wearing face masks properly. Created during COVID-19 to help enforce mask policies in public spaces.",
