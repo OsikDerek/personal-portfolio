@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { PROJECTS } from "@/lib/constants";
 
-type ProjectCategory = 'all' | 'ai' | 'hockey' | 'web';
+type ProjectCategory = 'all' | 'ai' | 'hockey' | 'web' | 'ai-finance' | 'c-programming' | 'hockey-ai' | 'algorithms';
 
 export default function ProjectsSection() {
   const [activeCategory, setActiveCategory] = useState<ProjectCategory>('all');
@@ -60,6 +60,16 @@ export default function ProjectsSection() {
               AI Development
             </button>
             <button 
+              onClick={() => setActiveCategory('ai-finance')}
+              className={`px-5 py-2 rounded-full font-medium transition ${
+                activeCategory === 'ai-finance' 
+                  ? 'bg-primary text-white' 
+                  : 'bg-white text-primary border border-primary hover:bg-primary/10'
+              }`}
+            >
+              AI & Finance
+            </button>
+            <button 
               onClick={() => setActiveCategory('hockey')}
               className={`px-5 py-2 rounded-full font-medium transition ${
                 activeCategory === 'hockey' 
@@ -68,6 +78,36 @@ export default function ProjectsSection() {
               }`}
             >
               Hockey Analytics
+            </button>
+            <button 
+              onClick={() => setActiveCategory('hockey-ai')}
+              className={`px-5 py-2 rounded-full font-medium transition ${
+                activeCategory === 'hockey-ai' 
+                  ? 'bg-primary text-white' 
+                  : 'bg-white text-primary border border-primary hover:bg-primary/10'
+              }`}
+            >
+              Hockey & AI
+            </button>
+            <button 
+              onClick={() => setActiveCategory('c-programming')}
+              className={`px-5 py-2 rounded-full font-medium transition ${
+                activeCategory === 'c-programming' 
+                  ? 'bg-primary text-white' 
+                  : 'bg-white text-primary border border-primary hover:bg-primary/10'
+              }`}
+            >
+              C Programming
+            </button>
+            <button 
+              onClick={() => setActiveCategory('algorithms')}
+              className={`px-5 py-2 rounded-full font-medium transition ${
+                activeCategory === 'algorithms' 
+                  ? 'bg-primary text-white' 
+                  : 'bg-white text-primary border border-primary hover:bg-primary/10'
+              }`}
+            >
+              Algorithms
             </button>
             <button 
               onClick={() => setActiveCategory('web')}
@@ -95,12 +135,26 @@ export default function ProjectsSection() {
                   <h3 className="text-xl font-bold font-montserrat text-primary">{project.title}</h3>
                   <span className={`px-3 py-1 text-sm font-medium rounded-full ${
                     project.category === 'ai' 
-                      ? 'bg-accent/10 text-accent' 
+                      ? 'bg-accent/10 text-accent'
+                      : project.category === 'ai-finance'
+                        ? 'bg-accent/10 text-accent'
                       : project.category === 'hockey'
                         ? 'bg-secondary/10 text-secondary'
+                      : project.category === 'hockey-ai'
+                        ? 'bg-secondary/10 text-secondary'
+                      : project.category === 'c-programming'
+                        ? 'bg-purple-100 text-purple-600'
+                      : project.category === 'algorithms'
+                        ? 'bg-yellow-100 text-amber-600'
                         : 'bg-neutral-700/10 text-neutral-700'
                   }`}>
-                    {project.category.toUpperCase()}
+                    {project.category === 'ai' && 'AI'}
+                    {project.category === 'ai-finance' && 'AI/FINANCE'}
+                    {project.category === 'hockey' && 'HOCKEY'}
+                    {project.category === 'hockey-ai' && 'HOCKEY/AI'}
+                    {project.category === 'c-programming' && 'C PROGRAMMING'}
+                    {project.category === 'algorithms' && 'ALGORITHMS'}
+                    {project.category === 'web' && 'WEB'}
                   </span>
                 </div>
                 <p className="text-neutral-700 mb-4">

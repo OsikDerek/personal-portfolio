@@ -12,7 +12,7 @@ export interface Project {
   title: string;
   description: string;
   image: string;
-  category: "ai" | "hockey" | "web";
+  category: "ai" | "hockey" | "web" | "ai-finance" | "c-programming" | "hockey-ai" | "algorithms";
   tags: string[];
   githubLink: string;
 }
@@ -25,7 +25,7 @@ export const PROJECTS: Project[] = [
       "Implemented a neural network agent that predicts the direction of Tesla stock price movements using artificial neural networks and technical indicators.",
     image:
       "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
-    category: "ai",
+    category: "ai-finance",
     tags: ["Neural Networks", "Machine Learning", "Stock Market", "Financial Analysis"],
     githubLink: "https://github.com/derekosik/stock-nn-prediction",
   },
@@ -36,7 +36,7 @@ export const PROJECTS: Project[] = [
       "Financial analysis project using Python's Riskfolio library to optimize investment portfolios through various risk measurement models and customizable constraints.",
     image:
       "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
-    category: "ai",
+    category: "ai-finance",
     tags: ["Finance", "Data Analysis", "Portfolio Optimization", "Python"],
     githubLink: "https://github.com/derekosik/portfolio-optimization",
   },
@@ -80,7 +80,7 @@ export const PROJECTS: Project[] = [
       "Implementation of the classic card game 'War' in C. Players draw cards from their deck, compare ranks and suits, with the winner taking both cards. Includes memory management and randomized gameplay.",
     image:
       "https://images.unsplash.com/photo-1606167668584-78701c57f13d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
-    category: "hockey",
+    category: "c-programming",
     tags: ["C", "Game Development", "Data Structures", "Algorithms"],
     githubLink: "https://github.com/derekosik/card-game-war",
   },
@@ -91,7 +91,7 @@ export const PROJECTS: Project[] = [
       "Computer vision system that tracks player movements and provides real-time performance analytics during games and practice.",
     image:
       "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
-    category: "ai",
+    category: "hockey-ai",
     tags: ["Python", "TensorFlow", "OpenCV"],
     githubLink: "https://github.com/derekosik/hockey-vision-ai",
   },
@@ -113,7 +113,7 @@ export const PROJECTS: Project[] = [
       "AI system that analyzes game footage to identify patterns, predict opponent strategies, and recommend tactical adjustments.",
     image:
       "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
-    category: "ai",
+    category: "hockey-ai",
     tags: ["Python", "PyTorch", "SQL"],
     githubLink: "https://github.com/derekosik/game-strategy-ai",
   },
