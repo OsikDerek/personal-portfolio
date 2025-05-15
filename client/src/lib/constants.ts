@@ -48,7 +48,7 @@ export const PROJECTS: Project[] = [
     image:
       "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
     category: "ai-finance",
-    tags: ["Neural Networks", "Machine Learning", "Stock Market", "Financial Analysis"],
+    tags: ["Neural Networks", "Machine Learning", "Stock Market", "Financial Analysis", "Python"],
     githubLink: "https://github.com/derekosik/stock-nn-prediction",
   },
   {
