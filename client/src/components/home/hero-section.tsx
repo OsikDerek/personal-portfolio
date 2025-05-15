@@ -61,28 +61,28 @@ export default function HeroSection() {
             <div className="grid grid-cols-2 gap-3">
               <div className="relative aspect-square overflow-hidden rounded-tl-xl shadow-lg">
                 <img
-                  src="https://images.unsplash.com/photo-1580679664046-d3a55c9d11e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80"
+                  src="https://i.postimg.cc/1z6XjkwZ/IMG-4939.jpg"
                   alt="Professional Hockey Action"
-                  className="h-full w-full object-cover"
-                />
-              </div>
-              <div className="relative aspect-square overflow-hidden rounded-tr-xl shadow-lg">
-                <img
-                  src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80"
-                  alt="AI Development Work"
                   className="h-full w-full object-cover"
                 />
               </div>
               <div className="relative aspect-square overflow-hidden rounded-bl-xl shadow-lg">
                 <img
-                  src="https://images.unsplash.com/photo-1531983412531-1f49a365ffed?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80"
+                  src="https://i.postimg.cc/zDFfgmny/IMG-9621-1.jpg"
+                  alt="Hockey Action Shot"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <div className="relative aspect-square overflow-hidden rounded-bl-xl shadow-lg">
+                <img
+                  src="https://i.postimg.cc/135Vtm2R/IMG-7640-1.jpg"
                   alt="Hockey Coaching"
                   className="h-full w-full object-cover"
                 />
               </div>
               <div className="relative aspect-square overflow-hidden rounded-br-xl shadow-lg">
                 <img
-                  src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80"
+                  src="https://i.postimg.cc/8k2jGPkr/20230413-172512-65-A057-2.jpg"
                   alt="Professional Portrait"
                   className="h-full w-full object-cover"
                 />

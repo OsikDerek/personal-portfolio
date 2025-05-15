@@ -104,7 +104,7 @@ export default function Footer() {
 
         <div className="border-t border-neutral-700 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-neutral-400 mb-4 md:mb-0">
-            &copy; {currentYear} John Doe. All rights reserved.
+            &copy; {currentYear} Derek Osik. All rights reserved.
           </p>
 
           <div className="flex space-x-6">
