@@ -155,10 +155,10 @@ export default function ContactSection() {
                 <div>
                   <h4 className="text-lg font-semibold text-primary">Email</h4>
                   <a
-                    href="mailto:contact@johndoe.com"
+                    href="mailto:derekvosik@gmail.com"
                     className="text-neutral-700 hover:text-primary"
                   >
-                    contact@johndoe.com
+                    derekvosik@gmail.com
                   </a>
                 </div>
               </div>
@@ -185,7 +185,7 @@ export default function ContactSection() {
                   <h4 className="text-lg font-semibold text-primary">
                     Location
                   </h4>
-                  <p className="text-neutral-700">Toronto, Canada</p>
+                  <p className="text-neutral-700">Worcester, Massachusetts</p>
                   <p className="text-neutral-700">
                     Available for remote work worldwide
                   </p>
@@ -225,10 +225,10 @@ export default function ContactSection() {
                     Availability
                   </h4>
                   <p className="text-neutral-700">
-                    Consulting: Limited spots available
+                    Consulting: Limited Spots Available
                   </p>
                   <p className="text-neutral-700">
-                    Coaching: Seasonal programs
+                    Coaching: Lessons and programs available
                   </p>
                 </div>
               </div>
