@@ -225,7 +225,7 @@ export default function ContactSection() {
                     Availability
                   </h4>
                   <p className="text-neutral-700">
-                    Consulting: Limited Spots Available
+                    Consulting: Limited spots available
                   </p>
                   <p className="text-neutral-700">
                     Coaching: Lessons and programs available
