@@ -30,7 +30,17 @@ export default function ProjectsSection() {
 
   const filteredProjects = activeCategory === 'all' 
     ? PROJECTS 
-    : PROJECTS.filter(project => project.category === activeCategory);
+    : PROJECTS.filter(project => {
+        if (activeCategory === 'ai') {
+          return project.category === 'ai' || project.category === 'hockey-ai' || project.category === 'ai-research' || project.category === 'ai-finance';
+        } else if (activeCategory === 'research') {
+          return project.category === 'research' || project.category === 'ai-research';
+        } else if (activeCategory === 'c-programming') {
+          return project.category === 'c-programming' || project.tags.includes('C Programming');
+        } else {
+          return project.category === activeCategory;
+        }
+      });
 
   return (
     <section id="projects" ref={sectionRef} className="py-16 bg-neutral-100 section-fade">

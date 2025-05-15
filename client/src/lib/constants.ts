@@ -26,7 +26,7 @@ export const PROJECTS: Project[] = [
     image:
       "https://images.unsplash.com/photo-1629654297299-c8506221ca97?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
     category: "systems",
-    tags: ["C", "Multithreading", "Socket Programming", "Systems Programming", "Performance Optimization", "Georgia Tech"],
+    tags: ["C", "Multithreading", "Socket Programming", "Systems Programming", "Performance Optimization", "Georgia Tech", "C Programming"],
     githubLink: "https://github.com/derekosik/multithreaded-server",
   },
   {
