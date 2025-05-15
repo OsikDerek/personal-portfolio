@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { PROJECTS } from "@/lib/constants";
 
-type ProjectCategory = 'all' | 'ai' | 'hockey' | 'web' | 'ai-finance' | 'c-programming' | 'hockey-ai' | 'algorithms' | 'research' | 'ai-research' | 'systems';
+type ProjectCategory = 'all' | 'ai' | 'hockey' | 'web' | 'ai-finance' | 'c-programming' | 'hockey-ai' | 'algorithms' | 'research' | 'ai-research' | 'systems' | 'python';
 
 export default function ProjectsSection() {
   const [activeCategory, setActiveCategory] = useState<ProjectCategory>('all');
@@ -37,6 +37,8 @@ export default function ProjectsSection() {
           return project.category === 'research' || project.category === 'ai-research';
         } else if (activeCategory === 'c-programming') {
           return project.category === 'c-programming' || project.tags.includes('C Programming');
+        } else if (activeCategory === 'python') {
+          return project.tags.includes('Python');
         } else {
           return project.category === activeCategory;
         }
@@ -150,6 +152,16 @@ export default function ProjectsSection() {
               Systems
             </button>
             <button 
+              onClick={() => setActiveCategory('python')}
+              className={`px-5 py-2 rounded-full font-medium transition ${
+                activeCategory === 'python' 
+                  ? 'bg-primary text-white' 
+                  : 'bg-white text-primary border border-primary hover:bg-primary/10'
+              }`}
+            >
+              Python
+            </button>
+            <button 
               onClick={() => setActiveCategory('web')}
               className={`px-5 py-2 rounded-full font-medium transition ${
                 activeCategory === 'web' 
@@ -171,40 +183,80 @@ export default function ProjectsSection() {
                 className="w-full h-48 object-cover"
               />
               <div className="p-6">
-                <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-xl font-bold font-montserrat text-primary">{project.title}</h3>
-                  <span className={`px-3 py-1 text-sm font-medium rounded-full ${
-                    project.category === 'ai' 
-                      ? 'bg-accent/10 text-accent'
-                      : project.category === 'ai-finance'
+                <div className="flex flex-col mb-4">
+                  <div className="flex justify-between items-start">
+                    <h3 className="text-xl font-bold font-montserrat text-primary">{project.title}</h3>
+                    <span className={`px-3 py-1 text-sm font-medium rounded-full ${
+                      project.category === 'ai' 
                         ? 'bg-accent/10 text-accent'
-                      : project.category === 'hockey'
-                        ? 'bg-secondary/10 text-secondary'
-                      : project.category === 'hockey-ai'
-                        ? 'bg-secondary/10 text-secondary'
-                      : project.category === 'c-programming'
-                        ? 'bg-purple-100 text-purple-600'
-                      : project.category === 'algorithms'
-                        ? 'bg-yellow-100 text-amber-600'
-                      : project.category === 'research'
-                        ? 'bg-green-100 text-green-600'
-                      : project.category === 'ai-research'
-                        ? 'bg-teal-100 text-teal-600'
-                      : project.category === 'systems'
-                        ? 'bg-blue-100 text-blue-600'
-                        : 'bg-neutral-700/10 text-neutral-700'
-                  }`}>
-                    {project.category === 'ai' && 'AI'}
-                    {project.category === 'ai-finance' && 'AI/FINANCE'}
-                    {project.category === 'hockey' && 'HOCKEY'}
-                    {project.category === 'hockey-ai' && 'HOCKEY/AI'}
-                    {project.category === 'c-programming' && 'C PROGRAMMING'}
-                    {project.category === 'algorithms' && 'ALGORITHMS'}
-                    {project.category === 'web' && 'WEB'}
-                    {project.category === 'research' && 'RESEARCH'}
-                    {project.category === 'ai-research' && 'AI/RESEARCH'}
-                    {project.category === 'systems' && 'SYSTEMS'}
-                  </span>
+                        : project.category === 'ai-finance'
+                          ? 'bg-accent/10 text-accent'
+                        : project.category === 'hockey'
+                          ? 'bg-secondary/10 text-secondary'
+                        : project.category === 'hockey-ai'
+                          ? 'bg-secondary/10 text-secondary'
+                        : project.category === 'c-programming'
+                          ? 'bg-purple-100 text-purple-600'
+                        : project.category === 'algorithms'
+                          ? 'bg-yellow-100 text-amber-600'
+                        : project.category === 'research'
+                          ? 'bg-green-100 text-green-600'
+                        : project.category === 'ai-research'
+                          ? 'bg-teal-100 text-teal-600'
+                        : project.category === 'systems'
+                          ? 'bg-blue-100 text-blue-600'
+                          : 'bg-neutral-700/10 text-neutral-700'
+                    }`}>
+                      {project.category === 'ai' && 'AI'}
+                      {project.category === 'ai-finance' && 'AI/FINANCE'}
+                      {project.category === 'hockey' && 'HOCKEY'}
+                      {project.category === 'hockey-ai' && 'HOCKEY/AI'}
+                      {project.category === 'c-programming' && 'C PROGRAMMING'}
+                      {project.category === 'algorithms' && 'ALGORITHMS'}
+                      {project.category === 'web' && 'WEB'}
+                      {project.category === 'research' && 'RESEARCH'}
+                      {project.category === 'ai-research' && 'AI/RESEARCH'}
+                      {project.category === 'systems' && 'SYSTEMS'}
+                    </span>
+                  </div>
+                  
+                  {/* Additional category badges */}
+                  <div className="flex flex-wrap gap-2 mt-2">
+                    {/* C Programming tag */}
+                    {(project.tags.includes('C Programming') && project.category !== 'c-programming') && (
+                      <span className="px-2 py-1 text-xs font-medium rounded-full bg-purple-100 text-purple-600">
+                        C PROGRAMMING
+                      </span>
+                    )}
+                    
+                    {/* Python tag */}
+                    {project.tags.includes('Python') && (
+                      <span className="px-2 py-1 text-xs font-medium rounded-full bg-indigo-100 text-indigo-600">
+                        PYTHON
+                      </span>
+                    )}
+                    
+                    {/* Research tag for AI Research */}
+                    {(project.category === 'ai-research' && !project.tags.includes('Research')) && (
+                      <span className="px-2 py-1 text-xs font-medium rounded-full bg-green-100 text-green-600">
+                        RESEARCH
+                      </span>
+                    )}
+                    
+                    {/* AI tag for projects that use AI but aren't in the AI category */}
+                    {(project.tags.includes('Machine Learning') && project.category !== 'ai' && project.category !== 'ai-research' && project.category !== 'ai-finance' && project.category !== 'hockey-ai') && (
+                      <span className="px-2 py-1 text-xs font-medium rounded-full bg-accent/10 text-accent">
+                        AI
+                      </span>
+                    )}
+                    
+                    {/* Systems tag */}
+                    {(project.tags.includes('Systems Programming') && project.category !== 'systems') && (
+                      <span className="px-2 py-1 text-xs font-medium rounded-full bg-blue-100 text-blue-600">
+                        SYSTEMS
+                      </span>
+                    )}
+                  </div>
                 </div>
                 <p className="text-neutral-700 mb-4">
                   {project.description}

@@ -70,7 +70,7 @@ export const PROJECTS: Project[] = [
     image:
       "https://images.unsplash.com/photo-1585828292920-638a2a78cb38?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
     category: "ai",
-    tags: ["Machine Learning", "Computer Vision", "COVID-19", "Public Health"],
+    tags: ["Machine Learning", "Computer Vision", "COVID-19", "Public Health", "Python"],
     githubLink: "https://github.com/derekosik/facemask-recognition",
   },
   {
@@ -92,7 +92,7 @@ export const PROJECTS: Project[] = [
     image:
       "https://images.unsplash.com/photo-1560264280-88b68371db39?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
     category: "ai",
-    tags: ["C", "Game Theory", "Minimax", "Alpha-Beta Pruning"],
+    tags: ["C", "Game Theory", "Minimax", "Alpha-Beta Pruning", "C Programming"],
     githubLink: "https://github.com/derekosik/knight-isolation",
   },
   {
