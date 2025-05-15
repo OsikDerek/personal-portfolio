@@ -46,7 +46,7 @@ export const PROJECTS: Project[] = [
     description:
       "Computer vision system that detects whether individuals are wearing face masks properly. Created during COVID-19 to help enforce mask policies in public spaces.",
     image:
-      "https://images.unsplash.com/photo-1602893119308-906c21f25b5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
+      "https://images.unsplash.com/photo-1585828292920-638a2a78cb38?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
     category: "ai",
     tags: ["Machine Learning", "Computer Vision", "COVID-19", "Public Health"],
     githubLink: "https://github.com/derekosik/facemask-recognition",
