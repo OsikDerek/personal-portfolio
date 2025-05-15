@@ -202,7 +202,7 @@ export default function AboutSection() {
                     <polygon points="10 8 16 12 10 16 10 8"></polygon>
                   </svg>
                 </div>
-                <h4 className="text-xl font-bold font-montserrat text-primary mb-2">
+                <h4 className="text-lg sm:text-xl font-bold font-montserrat text-primary mb-2">
                   Elite Hockey
                 </h4>
                 <p className="text-neutral-700 text-sm sm:text-base">
@@ -227,7 +227,7 @@ export default function AboutSection() {
                     <path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path>
                   </svg>
                 </div>
-                <h4 className="text-xl font-bold font-montserrat text-secondary mb-2">
+                <h4 className="text-lg sm:text-xl font-bold font-montserrat text-secondary mb-2">
                   Skill Development
                 </h4>
                 <p className="text-neutral-700 text-sm sm:text-base">
@@ -255,10 +255,10 @@ export default function AboutSection() {
                     <path d="M9 17h3"></path>
                   </svg>
                 </div>
-                <h4 className="text-xl font-bold font-montserrat text-accent mb-2">
+                <h4 className="text-lg sm:text-xl font-bold font-montserrat text-accent mb-2">
                   Sports Technology
                 </h4>
-                <p className="text-neutral-700">
+                <p className="text-neutral-700 text-sm sm:text-base">
                   Custom AI solutions for performance analytics, biomechanics
                   analysis, and game strategy optimization.
                 </p>
