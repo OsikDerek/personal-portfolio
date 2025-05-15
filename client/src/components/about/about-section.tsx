@@ -33,7 +33,7 @@ export default function AboutSection() {
       ref={sectionRef}
       className="py-16 bg-white section-fade"
     >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl md:text-4xl font-bold font-montserrat text-primary mb-12 text-center">
           Bridging Two Worlds
         </h2>
@@ -184,8 +184,8 @@ export default function AboutSection() {
               Areas of Focus
             </h3>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-primary/5 p-6 rounded-xl">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+              <div className="bg-primary/5 p-6 rounded-xl h-full overflow-hidden">
                 <div className="text-4xl text-primary mb-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -205,13 +205,13 @@ export default function AboutSection() {
                 <h4 className="text-xl font-bold font-montserrat text-primary mb-2">
                   Elite Hockey
                 </h4>
-                <p className="text-neutral-700">
+                <p className="text-neutral-700 text-sm sm:text-base">
                   Professional-level performance focusing on skating and shooting mechanics,
                   game strategy, and high-performance training methodologies.
                 </p>
               </div>
 
-              <div className="bg-secondary/5 p-6 rounded-xl">
+              <div className="bg-secondary/5 p-6 rounded-xl h-full overflow-hidden">
                 <div className="text-4xl text-secondary mb-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -230,13 +230,13 @@ export default function AboutSection() {
                 <h4 className="text-xl font-bold font-montserrat text-secondary mb-2">
                   Skill Development
                 </h4>
-                <p className="text-neutral-700">
+                <p className="text-neutral-700 text-sm sm:text-base">
                   Systematic and individualized coaching approaches that combine technical
                   expertise with data-driven feedback for players at all levels.
                 </p>
               </div>
 
-              <div className="bg-accent/5 p-6 rounded-xl">
+              <div className="bg-accent/5 p-6 rounded-xl h-full overflow-hidden">
                 <div className="text-4xl text-accent mb-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
