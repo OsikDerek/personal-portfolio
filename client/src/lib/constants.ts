@@ -12,12 +12,23 @@ export interface Project {
   title: string;
   description: string;
   image: string;
-  category: "ai" | "hockey" | "web" | "ai-finance" | "c-programming" | "hockey-ai" | "algorithms";
+  category: "ai" | "hockey" | "web" | "ai-finance" | "c-programming" | "hockey-ai" | "algorithms" | "research" | "ai-research" | "systems";
   tags: string[];
   githubLink: string;
 }
 
 export const PROJECTS: Project[] = [
+  {
+    id: 12,
+    title: "Multithreaded File Server",
+    description:
+      "Designed and implemented a multi-threaded server that serves static files based on the GetFile protocol (HTTP-like). Created a multi-threaded client as load generator for testing scalability. Implemented in C with socket programming and POSIX threads.",
+    image:
+      "https://images.unsplash.com/photo-1629654297299-c8506221ca97?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
+    category: "systems",
+    tags: ["C", "Multithreading", "Socket Programming", "Systems Programming", "Performance Optimization", "Georgia Tech"],
+    githubLink: "https://github.com/derekosik/multithreaded-server",
+  },
   {
     id: 1,
     title: "Discipline & Mental Health Research",
@@ -25,7 +36,7 @@ export const PROJECTS: Project[] = [
       "Cognitive science research exploring how structured discipline shapes self-representation and emotional resilience in children and adolescents. Examines mechanisms that link early discipline with long-term mental health outcomes.",
     image:
       "https://images.unsplash.com/photo-1607988795691-3d0147b43231?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
-    category: "ai",
+    category: "research",
     tags: ["Cognitive Science", "Mental Health", "Neural Networks", "Child Development", "Georgia Tech"],
     githubLink: "https://github.com/derekosik/discipline-mental-health-research",
   },
@@ -69,8 +80,8 @@ export const PROJECTS: Project[] = [
       "Wearable technology research project for monitoring and detecting dehydration in athletes, elder adults, and military personnel using machine learning algorithms.",
     image:
       "https://images.unsplash.com/photo-1553484771-371a605b060b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
-    category: "ai",
-    tags: ["Machine Learning", "Wearable Tech", "Market Research", "Healthcare"],
+    category: "ai-research",
+    tags: ["Machine Learning", "Wearable Tech", "Market Research", "Healthcare", "Research"],
     githubLink: "https://github.com/derekosik/dehydration-detection",
   },
   {
