@@ -288,11 +288,35 @@ export default function CareersSection() {
                   <h4 className="text-xl font-bold font-montserrat text-primary mb-1">
                     Professional Hockey
                   </h4>
-                  <p className="text-neutral-700">
+                  <p className="text-neutral-700 mb-3">
                     2022-2023 SPHL Evansville Thunderbolts and ECHL Worcester
                     Railers. 2023-2025 SPHL Knoxville Ice Bears and ECHL
                     Greenville Swamp Rabbits loan 2024.
                   </p>
+                  <a
+                    href="https://www.eliteprospects.com/player/301180/derek-osik"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-4 py-2 bg-secondary text-white rounded-lg hover:bg-secondary/90 transition-colors text-sm font-medium"
+                  >
+                    <svg
+                      className="mr-2 h-4 w-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15,3 21,3 21,9"></polyline>
+                      <line x1="10" x2="21" y1="14" y2="3"></line>
+                    </svg>
+                    View Elite Prospects Profile
+                  </a>
                 </div>
               </div>
 
