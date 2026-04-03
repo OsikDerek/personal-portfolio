@@ -296,7 +296,13 @@ export default function ProjectsSection() {
           ))}
         </div>
         
-        <div className="mt-12 text-center">
+        <div className="mt-10 text-center">
+          <p className="text-sm text-neutral-500 italic">
+            Many repositories are private — feel free to reach out if you'd like access.
+          </p>
+        </div>
+
+        <div className="mt-6 text-center">
           <a 
             href="https://github.com/OsikDerek" 
             target="_blank" 
