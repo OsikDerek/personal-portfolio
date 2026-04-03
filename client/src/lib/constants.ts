@@ -119,6 +119,18 @@ export const PROJECTS: Project[] = [
     githubLink: "https://github.com/derekosik/maze-search-algorithms",
   },
   {
+    id: 13,
+    title: "ARC-AGI Problem Solving Agent",
+    description:
+      "AI agent designed to solve tasks from the Abstraction and Reasoning Corpus (ARC-AGI) benchmark, which tests a model's ability to generalize from few examples — a core challenge in artificial general intelligence research.",
+    image:
+      "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
+    category: "ai-research",
+    tags: ["Python", "AGI", "Reasoning", "Machine Learning", "Research"],
+    githubLink: "https://github.com/OsikDerek/ARC_AGI_agent",
+    hasRepo: true,
+  },
+  {
     id: 7,
     title: "Hockey Vision AI (In Progress)",
     description:
