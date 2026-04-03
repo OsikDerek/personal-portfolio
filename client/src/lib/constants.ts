@@ -15,6 +15,7 @@ export interface Project {
   category: "ai" | "hockey" | "web" | "ai-finance" | "c-programming" | "hockey-ai" | "algorithms" | "research" | "ai-research" | "systems";
   tags: string[];
   githubLink: string;
+  hasRepo?: boolean;
 }
 
 export const PROJECTS: Project[] = [
@@ -127,6 +128,7 @@ export const PROJECTS: Project[] = [
     category: "hockey-ai",
     tags: ["Python", "TensorFlow", "OpenCV"],
     githubLink: "https://github.com/OsikDerek/Hockey_AI",
+    hasRepo: true,
   },
   {
     id: 8,
