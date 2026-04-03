@@ -296,7 +296,7 @@ export default function ProjectsSection() {
         
         <div className="mt-12 text-center">
           <a 
-            href="https://github.com/derekosik" 
+            href="https://github.com/OsikDerek" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="inline-flex items-center px-6 py-3 bg-neutral-800 text-white font-semibold rounded-lg shadow hover:bg-neutral-700 transition duration-300"

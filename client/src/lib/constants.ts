@@ -126,7 +126,7 @@ export const PROJECTS: Project[] = [
       "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
     category: "hockey-ai",
     tags: ["Python", "TensorFlow", "OpenCV"],
-    githubLink: "https://github.com/derekosik/hockey-vision-ai",
+    githubLink: "https://github.com/OsikDerek/Hockey_AI",
   },
   {
     id: 8,
