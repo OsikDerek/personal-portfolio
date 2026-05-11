@@ -1,7 +1,4 @@
 // Social media links
-// TODO(derek): canonical GitHub username? SOCIAL_LINKS.github currently points to
-// "OsikDerek" but PROJECTS[].githubLink uses "derekosik" — confirm which is right
-// and make consistent. Both URLs were live in the Replit version.
 export const SOCIAL_LINKS = {
   linkedin: "https://linkedin.com/in/derek-osik-8a8ab687/",
   twitter: "https://twitter.com/derekvosik",
@@ -31,7 +28,7 @@ export const PROJECTS: Project[] = [
       "https://images.unsplash.com/photo-1629654297299-c8506221ca97?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
     category: "systems",
     tags: ["C", "Multithreading", "Socket Programming", "Systems Programming", "Performance Optimization", "Georgia Tech", "C Programming"],
-    githubLink: "https://github.com/derekosik/multithreaded-server",
+    githubLink: "https://github.com/OsikDerek/multithreaded-server",
   },
   {
     id: 1,
@@ -42,7 +39,7 @@ export const PROJECTS: Project[] = [
       "https://images.unsplash.com/photo-1607988795691-3d0147b43231?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
     category: "research",
     tags: ["Cognitive Science", "Mental Health", "Neural Networks", "Child Development", "Georgia Tech"],
-    githubLink: "https://github.com/derekosik/discipline-mental-health-research",
+    githubLink: "https://github.com/OsikDerek/discipline-mental-health-research",
   },
   {
     id: 2,
@@ -53,7 +50,7 @@ export const PROJECTS: Project[] = [
       "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
     category: "ai-finance",
     tags: ["Neural Networks", "Machine Learning", "Stock Market", "Financial Analysis", "Python"],
-    githubLink: "https://github.com/derekosik/stock-nn-prediction",
+    githubLink: "https://github.com/OsikDerek/stock-nn-prediction",
   },
   {
     id: 3,
@@ -64,7 +61,7 @@ export const PROJECTS: Project[] = [
       "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
     category: "ai-finance",
     tags: ["Finance", "Data Analysis", "Portfolio Optimization", "Python"],
-    githubLink: "https://github.com/derekosik/portfolio-optimization",
+    githubLink: "https://github.com/OsikDerek/portfolio-optimization",
   },
   {
     id: 11,
@@ -75,7 +72,7 @@ export const PROJECTS: Project[] = [
       "https://images.unsplash.com/photo-1585828292920-638a2a78cb38?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
     category: "ai",
     tags: ["Machine Learning", "Computer Vision", "COVID-19", "Public Health", "Python"],
-    githubLink: "https://github.com/derekosik/facemask-recognition",
+    githubLink: "https://github.com/OsikDerek/facemask-recognition",
   },
   {
     id: 4,
@@ -86,7 +83,7 @@ export const PROJECTS: Project[] = [
       "https://images.unsplash.com/photo-1553484771-371a605b060b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
     category: "ai-research",
     tags: ["Machine Learning", "Wearable Tech", "Market Research", "Healthcare", "Research"],
-    githubLink: "https://github.com/derekosik/dehydration-detection",
+    githubLink: "https://github.com/OsikDerek/dehydration-detection",
   },
   {
     id: 5,
@@ -97,7 +94,7 @@ export const PROJECTS: Project[] = [
       "https://images.unsplash.com/photo-1560264280-88b68371db39?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
     category: "ai",
     tags: ["C", "Game Theory", "Minimax", "Alpha-Beta Pruning", "C Programming"],
-    githubLink: "https://github.com/derekosik/knight-isolation",
+    githubLink: "https://github.com/OsikDerek/knight-isolation",
   },
   {
     id: 6,
@@ -108,7 +105,7 @@ export const PROJECTS: Project[] = [
       "https://images.unsplash.com/photo-1606167668584-78701c57f13d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
     category: "c-programming",
     tags: ["C", "Game Development", "Data Structures", "Algorithms"],
-    githubLink: "https://github.com/derekosik/card-game-war",
+    githubLink: "https://github.com/OsikDerek/card-game-war",
   },
   {
     id: 10,
@@ -119,7 +116,7 @@ export const PROJECTS: Project[] = [
       "https://images.unsplash.com/photo-1519419166318-4f5c601b8e6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
     category: "algorithms",
     tags: ["Python", "Search Algorithms", "Pathfinding", "Heuristics"],
-    githubLink: "https://github.com/derekosik/maze-search-algorithms",
+    githubLink: "https://github.com/OsikDerek/maze-search-algorithms",
   },
   {
     id: 13,
@@ -154,7 +151,7 @@ export const PROJECTS: Project[] = [
       "https://images.unsplash.com/photo-1528659882437-b89a74bc157f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
     category: "hockey",
     tags: ["React Native", "Firebase", "ML Kit", "Express", "PostgreSQL"],
-    githubLink: "https://github.com/derekosik/hockey-training-platform",
+    githubLink: "https://github.com/OsikDerek/hockey-training-platform",
   },
   {
     id: 9,
@@ -165,7 +162,7 @@ export const PROJECTS: Project[] = [
       "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
     category: "hockey-ai",
     tags: ["Python", "PyTorch", "SQL"],
-    githubLink: "https://github.com/derekosik/game-strategy-ai",
+    githubLink: "https://github.com/OsikDerek/game-strategy-ai",
   },
 
 ];
