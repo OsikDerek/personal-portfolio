@@ -1,7 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { useQuery } from "@tanstack/react-query";
-import { getQueryFn } from "@/lib/queryClient";
-import type { CoachingProgram } from "@shared/schema";
+import { PROGRAMS, type CoachingProgram } from "@/lib/programs";
 
 export default function CoachingSection() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -27,14 +25,8 @@ export default function CoachingSection() {
       }
     };
   }, []);
-  
-  // Fetch coaching programs
-  const { data, isLoading, error } = useQuery({
-    queryKey: ['/api/programs'],
-    queryFn: getQueryFn<{ programs: CoachingProgram[] }>({ on401: "returnNull" }),
-  });
 
-  const programs = data?.programs || [];
+  const programs = PROGRAMS;
 
   const handleProgramClick = (program: CoachingProgram) => {
     setSelectedProgram(program);
@@ -79,15 +71,7 @@ export default function CoachingSection() {
           or looking to reach elite performance levels.
         </p>
         
-        {isLoading ? (
-          <div className="flex justify-center items-center py-12">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
-          </div>
-        ) : error ? (
-          <div className="bg-red-50 border border-red-200 text-red-600 p-4 rounded-xl text-center">
-            <p>Unable to load coaching programs. Please try again later.</p>
-          </div>
-        ) : programs.length === 0 ? (
+        {programs.length === 0 ? (
           <div className="bg-neutral-50 border border-neutral-200 p-8 rounded-xl text-center">
             <h3 className="text-xl font-bold font-montserrat text-primary mb-2">Coming Soon</h3>
             <p className="text-neutral-700">

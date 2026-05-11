@@ -1,4 +1,7 @@
 // Social media links
+// TODO(derek): canonical GitHub username? SOCIAL_LINKS.github currently points to
+// "OsikDerek" but PROJECTS[].githubLink uses "derekosik" — confirm which is right
+// and make consistent. Both URLs were live in the Replit version.
 export const SOCIAL_LINKS = {
   linkedin: "https://linkedin.com/in/derek-osik-8a8ab687/",
   twitter: "https://twitter.com/derekvosik",
