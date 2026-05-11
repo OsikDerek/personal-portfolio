@@ -132,37 +132,27 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 7,
-    title: "Hockey Vision AI (In Progress)",
+    title: "Hockey AI — Decision Simulator",
     description:
-      "Computer vision system that tracks player movements and provides real-time performance analytics during games and practice.",
+      "North-star vision: a playable VR/gamepad hockey simulator loaded from your own shifts — drop the user into POV at real decision moments, play out alternatives, and rebuild neural pathways through high-rep practice in a safe environment. Today: a Three.js 3D viewer reconstructs broadcast/sports-cam footage as avatars on a regulation rink. Quiz Mode pauses at every high-confidence decision (carry / dump / pass / shoot) and reveals the AI's evaluation. Powered by multi-player tracking with YOLOv8 + ByteTrack, zone detection, possession evaluation, and seven decision detectors. Active development on tracking and calibration accuracy. Built by a professional hockey player and skating coach.",
     image:
-      "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
     category: "hockey-ai",
-    tags: ["Python", "TensorFlow", "OpenCV"],
+    tags: ["Python", "PyTorch", "YOLO", "ByteTrack", "Three.js", "Computer Vision"],
     githubLink: "https://github.com/OsikDerek/Hockey_AI",
     hasRepo: true,
   },
   {
-    id: 8,
-    title: "Hockey Training Platform (In Progress)",
+    id: 14,
+    title: "Hockey Vision AI",
     description:
-      "Comprehensive platform that combines skating technique analysis with personalized training programs, video demonstrations, and progress tracking.",
+      "North-star vision: make elite-level technique analysis accessible to any skater or coach with a phone and a video. Today: a single-skater computer-vision pipeline that grades drill or practice footage on biomechanics and outputs a coaching report with personalized drill recommendations. Ten supported techniques (forward stride, crossover, wrist shot, snap shot, one-timer, stickhandling, hockey stop, backwards skating, transitions, edge work), each defined by a YAML rubric of joint-angle thresholds and coaching cues. Outputs annotated video, human-readable report, and structured JSON. MediaPipe and YOLO-pose backends. Spun out of the Hockey AI Decision Simulator on 2026-05-11. Built by a professional hockey player and skating coach.",
     image:
       "https://images.unsplash.com/photo-1528659882437-b89a74bc157f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
-    category: "hockey",
-    tags: ["React Native", "Firebase", "ML Kit", "Express", "PostgreSQL"],
-    githubLink: "https://github.com/OsikDerek/hockey-training-platform",
-  },
-  {
-    id: 9,
-    title: "Hockey Strategy AI (In Progress)",
-    description:
-      "AI system that analyzes game footage to identify patterns, predict opponent strategies, and recommend tactical adjustments.",
-    image:
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80",
     category: "hockey-ai",
-    tags: ["Python", "PyTorch", "SQL"],
-    githubLink: "https://github.com/OsikDerek/game-strategy-ai",
+    tags: ["Python", "MediaPipe", "YOLO-Pose", "Computer Vision", "Biomechanics"],
+    githubLink: "https://github.com/OsikDerek/Hockey_Vision_AI",
+    hasRepo: true,
   },
 
 ];
