@@ -32,25 +32,6 @@ export default function CoachingSection() {
     setSelectedProgram(program);
   };
 
-  const formatPrice = (price: number) => {
-    return `$${(price / 100).toFixed(2)}`;
-  };
-
-  const formatDuration = (minutes: number) => {
-    if (minutes < 60) {
-      return `${minutes} minutes`;
-    }
-    
-    const hours = Math.floor(minutes / 60);
-    const remainingMinutes = minutes % 60;
-    
-    if (remainingMinutes === 0) {
-      return `${hours} hour${hours > 1 ? 's' : ''}`;
-    }
-    
-    return `${hours} hour${hours > 1 ? 's' : ''} ${remainingMinutes} minutes`;
-  };
-
   const getProgramTypeLabel = (type: string) => {
     switch (type) {
       case 'one_on_one': return 'One-on-One';
@@ -103,11 +84,14 @@ export default function CoachingSection() {
                   <div className="flex justify-between pt-4 border-t border-neutral-100">
                     <div className="text-neutral-500">
                       <span className="block text-sm">Duration</span>
-                      <span className="font-medium">{formatDuration(program.duration)}</span>
+                      <span className="font-medium">{program.durationLabel}</span>
                     </div>
                     <div className="text-right">
                       <span className="block text-sm text-neutral-500">Price</span>
-                      <span className="text-lg font-bold text-primary">{formatPrice(program.price)}</span>
+                      <span className="text-lg font-bold text-primary">{program.priceLabel}</span>
+                      {program.priceNote && (
+                        <span className="block text-xs text-neutral-500 mt-1">{program.priceNote}</span>
+                      )}
                     </div>
                   </div>
                 </div>
